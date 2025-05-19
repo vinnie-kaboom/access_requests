@@ -1,6 +1,5 @@
 name: Access Request
 description: Request access to a system, repository, or resource
-title: "[Access Request] "
 labels: [access-request]
 assignees: []
 
@@ -41,15 +40,15 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: checkboxes
     id: type_of_access
     attributes:
       label: Type of Access
-      description: Select the type of access you need
+      description: Select all types of access you need
       options:
-        - Read
-        - Write
-        - Execute
+        - label: Read
+        - label: Write
+        - label: Execute
     validations:
       required: true
 
